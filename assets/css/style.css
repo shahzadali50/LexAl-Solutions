@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  word-wrap: break-word;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+section.lexAI {
+  padding: 10px 0px;
+}
+.bg-white{
+  background-color: rgb(253, 253, 253) !important;
+}
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow: none !important;
+}
+
+body.bg-img {
+  background-image: url("../images/background/Untitled\ design.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+
+
+.text-purple {
+  color: purple;
+}
+h4.sub-h {
+  font-size: 30px;
+}
+
+.shadow {
+  /* max-width: 1400px; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 15px 30px;
+  background-color: rgba(5, 2, 9, 0.2);
+  z-index: 10;
+}
+
+.lexAI div.card {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.942) 0px 4px 12px;
+}
+/* common-button */
+.btn-primary{
+  color: purple;
+  background-color: white;
+  border-color: white;
+  box-shadow: rgba(128, 0, 128, 0.8) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0,
+      0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+  background-color: rgba(126, 20, 126, 0.327);
+  border-color:rgba(126, 20, 126, 0.327);
+  color: rgb(250, 250, 250);
+}
+.btn-secondary{
+  background-color: purple;
+  border: 1px solid purple;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus{
+  background-color: white;
+  border: 1px solid purple;
+  color: purple;
+}
+
+
+.common-btn{
+  padding: 20px 20px;
+  margin-bottom: 8px;
+}
+.notification:hover,
+.logout .btn:hover{
+  background-color: aliceblue;
+  color: purple;
+}
+.logout .dropdown-toggle::after,
+.notification .dropdown-toggle::after{
+  display: none;
+}
+
+/* profile */
+.profile img.profile-pic {
+  width: 102px;
+  height: 102px;
+}
+/* Notification */
+.notification .notification-menu{
+  padding: 20px 20px;
+  width: 500px;
+  top: 20px !important;
+  left: -248px !important;
+  max-height: 593px;
+  overflow: auto;
+}
+/* logout */
+.logout .dropdown-menu {
+  top: -5px !important;
+  left: -40px !important;
+  box-shadow: rgba(0, 0, 0, 0.942) 0px 4px 12px;
+}
+.logout .dropdown-menu :hover {
+  color: purple;
+}
+/* calender */
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+  margin-left: 8px;
+  border: none;
+}
+.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+  border: none;
+}
+/* chat */
+.chat{
+  margin-top: -69px;
+}
+.chat .card {
+  /* padding: 10px 15px; */
+  padding: 0px 15px 24px 15px;
+  margin-top: 20px;
+  max-height: 350px;
+  overflow: auto;
+}
+.chat .title {
+  background-color: #898c9021;
+  padding: 15px 0px;
+  margin: 10px 0px;
+}
+.chat img.q-img {
+  width: 35px;
+}
+.chat i.title-icon {
+  color: rgb(128, 133, 133);
+  font-size: 22px;
+  padding: 0px 10px;
+}
+.chat form textarea {
+  resize: none;
+  background-color: #6f88a321 !important;
+  margin-top: 10px;
+}
+.chat button.send-msg {
+  background: none;
+  color: rgb(40, 82, 75);
+  border: none;
+  position: absolute;
+  top: -49px;
+  right: 24px;
+}
+/* calender */
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 4px;
+}
+.fc .fc-button {
+  font-size: 13px;
+}
+.ff_fileupload_wrap .ff_fileupload_dropzone {
+  height: 90px;
+}
+
+.lexAI .mt-20 {
+  margin-top: 20px;
+}
+/* SignUp and Login */
+section.sign-up,
+section .login {
+  min-height: calc(100vh - 0px);
+}
+
+.sign-up .row,
+.login .row {
+  min-height: calc(100vh - 0px);
+}
+.sign-up .card,
+.login .card {
+  padding: 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* document management */
+a i.document-icon{
+  color: gray;
+  padding: 0px 3px;
+}
+a i.document-icon:hover{
+  color: purple;
+}
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
