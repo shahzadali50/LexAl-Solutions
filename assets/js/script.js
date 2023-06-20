@@ -96,3 +96,12 @@ $(document).ready(function () {
   });
   
 });
+
+  // Document Edit JS
+  function editIt(id) {
+    $('.edit_input').prop('readonly', true);
+    $('.edit_input').css('border', "none");
+    $('#edit_input_' + id).prop('readonly', false);
+
+    $('#edit_input_' + id).css('border', "1px purple solid");
+}
