@@ -180,7 +180,7 @@
                         <!-- document-management modal -->
                         <div class="modal fade" id="document_management" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
@@ -190,26 +190,68 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="" method="post">
-                                            <input type="file" name="documenet_upload" id="fileToUpload"
-                                                accept="image/*">
-                                            <button type="submit" class="btn btn-secondary">Upload</button>
+                                        <form action="" method="post" class="d-flex align-items-center">
+
+                                            <input type="search" class="form-control mt-1" id="search"
+                                                placeholder="search">
+                                            <button type="submit" class="btn btn-secondary mt-1"> Search</button>
+
                                         </form>
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col" colspan="3">File Name</th>
-                                                    <td scope="col">type</td>
+                                                    <td scope="col">Type</td>
+                                                    <td scope="col">Owner</td>
                                                     <th scope="col">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td scope="col" colspan="3"> iam web developer</td>
+                                                    <td scope="col" colspan="3">
+                                                        <form action="" class="d-flex"><input
+                                                                class="edit_input form-control " maxlength="50"
+                                                                id="edit_input_1" type="text" style="border: none;"
+                                                                value=" iam web developer" readonly />
+                                                            <button class="btn tick-icon" type="submit"><i
+                                                                    class="fa fa-check document-icon"
+                                                                    aria-hidden="true"></i></button>
+                                                        </form>
+                                                    </td>
                                                     <td scope="col">img</td>
-                                                    <td><a href="#"><i class="fa fa-pencil-square-o document-icon"
+                                                    <td scope="col">Medtronix</td>
+                                                    <td><a href="#"><i onclick="editIt(1)"
+                                                                class="fa fa-pencil-square-o document-icon"
+                                                                aria-hidden="true"></i></a>
+
+                                                        <a href="#"> <i class="fa fa-trash document-icon"
+                                                                aria-hidden="true"></i></a>
+                                                        <a href="#">
+                                                            <i class="fa fa-download document-icon"
+                                                                aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td scope="col" colspan="3">
+                                                        <form action="" class="d-flex">
+                                                            <input class="edit_input form-control" maxlength="50"
+                                                                id="edit_input_2" type="text" style="border: none;"
+                                                                value=" iam python developer" readonly />
+                                                            <button class="btn tick-icon" type="submit"><i
+                                                                    class="fa fa-check document-icon"
+                                                                    aria-hidden="true"></i></button>
+                                                    </td>
+
+                                                    </form>
+                                                    <td scope="col">img</td>
+                                                    <td scope="col">Medtronix</td>
+
+                                                    <td><a href="#"><i onclick="editIt(2)"
+                                                                class="fa fa-pencil-square-o document-icon"
                                                                 aria-hidden="true"></i></a>
 
                                                         <a href="#"> <i class="fa fa-trash document-icon"
@@ -224,7 +266,14 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer d-flex justify-content-between">
+                                        <form action="" method="post">
+
+                                            <input type="file" name="documenet_upload" id="fileToUpload"
+                                                accept="image/*">
+                                            <button type="submit" class="btn btn-secondary">Upload</button>
+
+                                        </form>
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Close</button>
                                     </div>
@@ -233,50 +282,38 @@
                         </div>
                         <!-- Case-Management -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
-                            data-target="#document_management">
+                            data-target="#Case_Managementt">
                             Case Management
                         </button>
                         <!-- Case-Management modal -->
-                        <div class="modal fade" id="document_management" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="Case_Managementt" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
+                                        <h5 class="modal-title text-purple" id="exampleModalLabel">Case Management
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="" method="post">
-                                            <input type="file" name="documenet_upload" id="fileToUpload"
-                                                accept="image/*">
-                                            <button type="submit" class="btn btn-secondary">Upload</button>
-                                        </form>
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col" colspan="3">File Name</th>
-                                                    <td scope="col">type</td>
-                                                    <th scope="col">Actions</th>
+                                                    <th scope="col" colspan="3">Case Name</th>
+                                                    <td scope="col">Client Name</td>
+                                                    <th scope="col">Contact</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td scope="col" colspan="3"> iam web developer</td>
-                                                    <td scope="col">img</td>
-                                                    <td><a href="#"><i class="fa fa-pencil-square-o document-icon"
-                                                                aria-hidden="true"></i></a>
-
-                                                        <a href="#"> <i class="fa fa-trash document-icon"
-                                                                aria-hidden="true"></i></a>
-                                                        <a href="#">
-                                                            <i class="fa fa-download document-icon"
-                                                                aria-hidden="true"></i>
-                                                        </a>
+                                                    <td scope="col" colspan="3">John</td>
+                                                    <td scope="col">Haroon</td>
+                                                    <td>
+                                                        1234578910
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -349,16 +386,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- document-management -->
+                        <!-- collaboration_tools -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
-                            data-target="#document_management">
-                            Document Management
+                            data-target="#collaboration_tools">
+                           Collaboration Tools
                         </button>
-                        <!-- document-management modal -->
-                        <div class="modal fade" id="document_management" tabindex="-1"
+                        <!-- collaboration_tools modal -->
+                        <div class="modal fade" id="collaboration_tools" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-dialog-scrollable">
-                                <div class="modal-content">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable ">
+                                <div class="modal-content ">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
                                         </h5>
@@ -419,6 +456,76 @@
                                     data-toggle="modal" data-target="#listEvent">
                                     List Events
                                 </button>
+                            </div>
+                        </div>
+                        <!-- Calender Modal -->
+                        <div class="modal fade" id="addEvent" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-purple" id="exampleModalLabel">Add Event</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="event">Event Name<span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="event_name"
+                                                placeholder="Enter your Event name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="birthday">Event Date</label>
+                                            <input class="form-control" type="date" id="event_date" readonly
+                                                name="birthday">
+                                        </div>
+
+                                        <button onclick="saveEvent()" type="button"
+                                            class="btn btn-secondary bg-purple btn-lg btn-block mt-4 signup-btn">Submit</button>
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="listEvent" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">List Events</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <h5 class="text-purple">Events</h5>
+                                                    </th>
+                                                    <th>
+                                                        <h5 class="text-purple">Date</h5>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody id="list_event_tb">
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -511,70 +618,17 @@
     <!-- custom JS -->
     <script src="assets/js/script.js"></script>
 </body>
+<script>
+    $(document).ready(function () {
+
+    });
+    function editIt(id) {
+        $('.edit_input').prop('readonly', true);
+        $('.edit_input').css('border', "none");
+        $('#edit_input_' + id).prop('readonly', false);
+
+        $('#edit_input_' + id).css('border', "1px purple solid");
+    }
+</script>
 
 </html>
-<!-- Calender Modal -->
-<div class="modal fade" id="addEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-purple" id="exampleModalLabel">Add Event</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="event">Event Name<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="event_name" placeholder="Enter your Event name">
-                </div>
-                <div class="form-group">
-                    <label for="birthday">Event Date</label>
-                    <input class="form-control" type="date" id="event_date" readonly name="birthday">
-                </div>
-
-                <button onclick="saveEvent()" type="button"
-                    class="btn btn-secondary bg-purple btn-lg btn-block mt-4 signup-btn">Submit</button>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="listEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">List Events</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>
-                                <h5 class="text-purple">Events</h5>
-                            </th>
-                            <th>
-                                <h5 class="text-purple">Date</h5>
-                            </th>
-
-                        </tr>
-                    </thead>
-                    <tbody id="list_event_tb">
-
-                    </tbody>
-
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>

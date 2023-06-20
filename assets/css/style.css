@@ -225,13 +225,18 @@ section .login {
 }
 
 /* document management */
-a i.document-icon {
+ i.document-icon {
   color: gray;
   padding: 0px 3px;
 }
 
-a i.document-icon:hover {
+i.document-icon:hover {
   color: purple;
+}
+button.tick-icon{
+  /* position: absolute;
+  top: 123px;
+  right: 558px; */
 }
 
 @media only screen and (max-width: 1200px) {
