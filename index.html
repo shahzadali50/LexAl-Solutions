@@ -40,8 +40,7 @@
                             <div class="dropdown notification">
                                 <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    <i class="fa fa-bell" style="font-size: 29px; color:orange; "
-                                        aria-hidden="true"></i>
+                                   <img class="img-fluid" style="width: 27px;" src="assets/images/alert-bell/alert-bell.png" alt="">
                                 </button>
                                 <div class="dropdown-menu notification-menu">
                                     <h5 class="text-purple"> John</h5>
@@ -99,17 +98,15 @@
                         </div>
                         <div class="mt-3 d-flex justify-content-between">
 
-
-                            <a href="#" class="btn btn-primary common-btn">Invoice and Billing</a>
-
+                            <!-- Invoice and Billing -->
                             <a href="#" type="button" class="btn btn-primary common-btn" data-toggle="modal"
-                                data-target="#exampleModal">
-                                Register Employee
+                                data-target="#invoice_Billing">
+                                Invoice and Billing
                             </a>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
+                            <!--Invoice and Billing Modal -->
+                            <div class="modal fade" id="invoice_Billing" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -161,6 +158,59 @@
                                                     <label class="form-check-label" for="ComplianceNo">
                                                         No
                                                     </label>
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-secondary btn-lg btn-block mt-1">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Register Employee -->
+                            <a href="#" type="button" class="btn btn-primary common-btn" data-toggle="modal"
+                                data-target="#Employee_register">
+                                Register Employee
+                            </a>
+
+                            <!--Register Employee Modal -->
+                            <div class="modal fade" id="Employee_register" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-purple" id="exampleModalLabel">Register Employee
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="registerEmployeeForm">
+
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="name">Name<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control " id="name"
+                                                        placeholder="Enter Employee Name" name="name" required>
+
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="email">Email<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Enter Email" name="email" required>
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="role">Role<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="role"
+                                                        placeholder="Assign a role" name="role" required>
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="password">Password<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Enter Password" name="password" required>
                                                 </div>
                                                 <button type="submit"
                                                     class="btn btn-secondary btn-lg btn-block mt-1">Submit</button>
@@ -221,7 +271,7 @@
                                                         </form>
                                                     </td>
                                                     <td scope="col">img</td>
-                                                    <td scope="col">Medtronix</td>
+                                                    <td scope="col">Medtronix system</td>
                                                     <td><a href="#"><i onclick="editIt(1)"
                                                                 class="fa fa-pencil-square-o document-icon"
                                                                 aria-hidden="true"></i></a>
@@ -248,7 +298,7 @@
 
                                                     </form>
                                                     <td scope="col">img</td>
-                                                    <td scope="col">Medtronix</td>
+                                                    <td scope="col">Medtronix system</td>
 
                                                     <td><a href="#"><i onclick="editIt(2)"
                                                                 class="fa fa-pencil-square-o document-icon"
@@ -280,6 +330,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Case-Management -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
                             data-target="#Case_Managementt">
@@ -288,7 +339,7 @@
                         <!-- Case-Management modal -->
                         <div class="modal fade" id="Case_Managementt" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel">Case Management
@@ -298,35 +349,110 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover case-table">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col" colspan="3">Case Name</th>
-                                                    <td scope="col">Client Name</td>
-                                                    <th scope="col">Contact</th>
+                                                    <th scope="col">Case Name</th>
+                                                    <th scope="col">Client Name</th>
+                                                    <th scope="col">Client Contact</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td scope="col" colspan="3">John</td>
-                                                    <td scope="col">Haroon</td>
                                                     <td>
-                                                        1234578910
+                                                        <p>
+                                                            i Am webdeveloper
+                                                            i Am webdeveloper
+                                                            i Am webdeveloper
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quod eum nisi eos ratione asperiores debitis. Totam,
+                                                            voluptatibus! Quae quidem a vero odio eaque vitae.
+                                                            Dignissimos culpa quas dolores distinctio similique?
+                                                        </p>
+                                                        </p>
+                                                        </p>
                                                     </td>
+                                                    <td>Hamza PhythonPhython</td>
+                                                    <td>1234567890112</td>
+                                                    <td>
+                                                        <p class="expandable-cell">Lorem ipsum, dol Lorem ipsum dolor
+                                                            sit amet consectetur, adipisicing elit. Veniam placeat
+                                                            nostrum dicta officia tempore, ullam voluptatum quidem nihil
+                                                            laborum quod reiciendis, optio deleniti voluptas itaque
+                                                            dignissimos explicabo corrupti cum quos!
+
+                                                        </p>
+                                                    </td>
+                                                    <td> <a href="#">
+                                                            <i class="fa fa-trash document-icon" aria-hidden="true"></i>
+                                                        </a></td>
                                                 </tr>
-                                                <tr>
+
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                            data-target="#staticBackdrop" id="case_form_btn">
+                                            Add Case
+                                        </button>
+
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Close</button>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Case_management_form Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-purple" id="staticBackdropLabel">Add Case</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+
+                                            <div class="form-group">
+                                                <label for="name">Case Name</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="Case Name">
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Client">Client Name</label>
+                                                <input type="text" class="form-control" id="Client"
+                                                    placeholder="Client Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="contact">Client Contact</label>
+                                                <input type="phone" class="form-control" id="contact"
+                                                    placeholder="Contact">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="" id="" cols="30" rows="3"
+                                                    placeholder="Description"></textarea>
+
+                                            </div>
+                                            <button type="submit"
+                                                class="btn btn-secondary bg-purple btn-lg btn-block mt-4 signup-btn">Submit</button>
+
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Workflow-Automation -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
                             data-target="#document_management">
@@ -389,7 +515,7 @@
                         <!-- collaboration_tools -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
                             data-target="#collaboration_tools">
-                           Collaboration Tools
+                            Collaboration Tools
                         </button>
                         <!-- collaboration_tools modal -->
                         <div class="modal fade" id="collaboration_tools" tabindex="-1"

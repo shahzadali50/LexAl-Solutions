@@ -6,8 +6,12 @@ $(document).ready(function () {
   $('input[name="fileToUpload"]').change(function () {
     $('#profilePic_form').submit();
   }); 
-}
-)
+  // case_form modal js
+  $('#case_form_btn').click(function () {
+    $('#Case_Managementt').modal('hide');
+  });
+});
+
 
 
 // Calender JS 👇👇
