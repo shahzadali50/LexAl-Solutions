@@ -228,17 +228,21 @@ section .login {
  i.document-icon {
   color: gray;
   padding: 0px 3px;
+  font-size: 25px;
 }
 
 i.document-icon:hover {
   color: purple;
 }
-button.tick-icon{
-  /* position: absolute;
-  top: 123px;
-  right: 558px; */
+/* case Management */
+.case-table td p {
+  max-height: 100px;
+  overflow: hidden;
 }
 
+.case-table td p:hover {
+  overflow: auto;
+}
 @media only screen and (max-width: 1200px) {
   .common-btn {
     font-size: 18px;
