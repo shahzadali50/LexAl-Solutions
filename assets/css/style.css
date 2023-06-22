@@ -244,7 +244,7 @@ i.document-icon:hover {
   overflow: auto;
 }
 
-.expend-modal .modal-content{
+.expand-modal .modal-content{
   height: 700px !important;
 }
 @media only screen and (max-width: 1200px) {
