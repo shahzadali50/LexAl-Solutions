@@ -110,7 +110,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title text-purple" id="exampleModalLabel">Register Employee
+                                            <h5 class="modal-title text-purple" id="exampleModalLabel"> Invoice and Billing
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
@@ -119,46 +119,37 @@
                                         <div class="modal-body">
                                             <form>
                                                 <div class="form-group mb-1">
-                                                    <label class="mb-0" for="name">Name<span
+                                                    <label class="mb-0" for="name">Client Name<span
                                                             class="text-danger">*</span></label>
                                                     <input type="text" class="form-control " id="name"
-                                                        placeholder="Enter your Name">
+                                                        placeholder="Enter Client Name">
 
                                                 </div>
                                                 <div class="form-group mb-1">
-                                                    <label class="mb-0" for="email">Email<span
+                                                    <label class="mb-0" for="Client_Email">Client Email<span
                                                             class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control" id="email"
-                                                        placeholder="Enter your Email">
+                                                    <input type="email" class="form-control" id="Client_Email"
+                                                        placeholder="Enter Client Email">
                                                 </div>
                                                 <div class="form-group mb-1">
-                                                    <label class="mb-0" for="phone">Phone No<span
+                                                    <label class="mb-0" for="Client_phone">Client Phone No<span
                                                             class="text-danger">*</span></label>
-                                                    <input type="phone" class="form-control" id="phone"
-                                                        placeholder="Enter your Phone No">
+                                                    <input type="phone" class="form-control" id="Client_phone"
+                                                        placeholder="Enter Client Phone No">
                                                 </div>
                                                 <div class="form-group mb-1">
-                                                    <label class="mb-0" for="address">Address<span
+                                                    <label class="mb-0" for="Client_address">Client Address<span
                                                             class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control" id="address"
-                                                        placeholder="Enter your Address">
+                                                    <input type="text" class="form-control" id="Client_address"
+                                                        placeholder="Enter Client Address">
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="Due_Date">Due Date<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="date" class="form-control" id="Due_Date"
+                                                        placeholder="Due Date">
                                                 </div>
 
-                                                <label class="mb-0" for="textArea">Compliance<span
-                                                        class="text-danger">*</span></label>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" name="compliance" type="radio"
-                                                        name="" id="ComplianceYes">
-                                                    <label class="form-check-label pr-5" for="ComplianceYes">
-                                                        Yes
-                                                    </label>
-
-                                                    <input class="form-check-input" name="compliance" type="radio"
-                                                        name="" id="ComplianceNo">
-                                                    <label class="form-check-label" for="ComplianceNo">
-                                                        No
-                                                    </label>
-                                                </div>
                                                 <button type="submit"
                                                     class="btn btn-secondary btn-lg btn-block mt-1">Submit</button>
                                             </form>
@@ -230,7 +221,7 @@
                         <!-- document-management modal -->
                         <div class="modal fade" id="document_management" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable expend-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
@@ -339,7 +330,7 @@
                         <!-- Case-Management modal -->
                         <div class="modal fade" id="Case_Managementt" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable expend-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel">Case Management
@@ -461,7 +452,7 @@
                         <!-- Workflow-Automation modal -->
                         <div class="modal fade" id="document_management" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-dialog-scrollable expend-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
@@ -520,7 +511,7 @@
                         <!-- collaboration_tools modal -->
                         <div class="modal fade" id="collaboration_tools" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable ">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable expend-modal">
                                 <div class="modal-content ">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
@@ -621,10 +612,10 @@
                         </div>
                         <div class="modal fade" id="listEvent" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-dialog-scrollable expend-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">List Events</h5>
+                                        <h5 class="modal-title text-purple" id="exampleModalLabel">List Events</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

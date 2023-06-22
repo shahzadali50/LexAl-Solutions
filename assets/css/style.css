@@ -243,6 +243,10 @@ i.document-icon:hover {
 .case-table td p:hover {
   overflow: auto;
 }
+
+.expend-modal .modal-content{
+  height: 700px !important;
+}
 @media only screen and (max-width: 1200px) {
   .common-btn {
     font-size: 18px;
