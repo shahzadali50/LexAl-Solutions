@@ -40,7 +40,8 @@
                             <div class="dropdown notification">
                                 <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"
                                     aria-expanded="false">
-                                   <img class="img-fluid" style="width: 27px;" src="assets/images/alert-bell/alert-bell.png" alt="">
+                                    <img class="img-fluid" style="width: 27px;"
+                                        src="assets/images/alert-bell/alert-bell.png" alt="">
                                 </button>
                                 <div class="dropdown-menu notification-menu">
                                     <h5 class="text-purple"> John</h5>
@@ -103,11 +104,10 @@
                                 data-target="#invoice_Billing">
                                 Invoice and Billing
                             </a>
-
-                            <!--Invoice and Billing Modal -->
+                            <!-- Invoice and Billing Modal -->
                             <div class="modal fade" id="invoice_Billing" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title text-purple" id="exampleModalLabel"> Invoice and Billing
@@ -149,6 +149,17 @@
                                                     <input type="date" class="form-control" id="Due_Date"
                                                         placeholder="Due Date">
                                                 </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="Client_Amount">Total Amount<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="number" class="form-control" id="Client_Amount"
+                                                        placeholder="Enter Total Amount">
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label class="mb-0" for="client_Condition">Terms & Condition<span
+                                                            class="text-danger">*</span></label>
+                                                    <textarea class="form-control" name="" id="client_Condition" cols="30" rows="3" placeholder="Terms & Condition"></textarea>
+                                                </div>
 
                                                 <button type="submit"
                                                     class="btn btn-secondary btn-lg btn-block mt-1">Submit</button>
@@ -157,6 +168,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Register Employee -->
                             <a href="#" type="button" class="btn btn-primary common-btn" data-toggle="modal"
                                 data-target="#Employee_register">

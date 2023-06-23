@@ -124,7 +124,8 @@ h4.sub-h {
 }
 
 /* profile */
-.profile img.profile-pic {
+.profile img.profile-pic,
+.invoice-billing img.logo-img {
   width: 102px;
   height: 102px;
 }
@@ -223,7 +224,17 @@ section .login {
   padding: 30px 30px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+/* invoice-billing */
 
+.invoice-billing .header{
+ margin-bottom: 50px;
+}
+.invoice-billing h6{
+  font-weight: bold;
+}
+.invoice-billing ul li{
+  color: gray;
+}
 /* document management */
  i.document-icon {
   color: gray;
