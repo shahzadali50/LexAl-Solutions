@@ -107,9 +107,11 @@ h4.sub-h {
 }
 
 
-.common-btn {
+button.common-btn {
   padding: 20px 20px;
   margin-bottom: 8px;
+  z-index: 40;
+
 }
 
 .notification:hover,
@@ -126,8 +128,22 @@ h4.sub-h {
 /* profile */
 .profile img.profile-pic,
 .invoice-billing img.logo-img {
-  width: 102px;
-  height: 102px;
+  width: 100px;
+  height: 100px;
+}
+
+.profile p {
+  margin-bottom: 0px;
+  color: gray;
+}
+
+.profile .card {
+  padding: 18px 0px;
+
+}
+
+button.padding-btn {
+  padding: 23px 20px !important;
 }
 
 /* Notification */
@@ -203,12 +219,15 @@ h4.sub-h {
   top: -49px;
   right: 24px;
 }
+
 .lexAI .mt-20 {
   margin-top: 20px;
 }
-.ff_fileupload_wrap .ff_fileupload_dropzone{
+
+.ff_fileupload_wrap .ff_fileupload_dropzone {
   height: 90px !important;
 }
+
 /* SignUp and Login */
 section.sign-up,
 section .login {
@@ -219,24 +238,29 @@ section .login {
 .login .row {
   min-height: calc(100vh - 0px);
 }
+
 .sign-up .card,
 .login .card {
   padding: 30px 30px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
 /* invoice-billing */
 
-.invoice-billing .header{
- margin-bottom: 50px;
+.invoice-billing .header {
+  margin-bottom: 50px;
 }
-.invoice-billing h6{
+
+.invoice-billing h6 {
   font-weight: bold;
 }
-.invoice-billing ul li{
+
+.invoice-billing ul li {
   color: gray;
 }
+
 /* document management */
- i.document-icon {
+i.document-icon {
   color: gray;
   padding: 0px 3px;
   font-size: 25px;
@@ -245,6 +269,7 @@ section .login {
 i.document-icon:hover {
   color: purple;
 }
+
 /* case Management */
 .case-table td p {
   max-height: 100px;
@@ -255,17 +280,20 @@ i.document-icon:hover {
   overflow: auto;
 }
 
-.expand-modal .modal-content{
+.expand-modal .modal-content {
   height: 700px !important;
 }
+
 @media only screen and (max-width: 1200px) {
   .common-btn {
     font-size: 18px;
   }
+
   .profile .btn {
     font-size: 14px;
   }
- .fc .fc-button {
+
+  .fc .fc-button {
     font-size: 13px !important;
   }
 }
@@ -274,6 +302,7 @@ i.document-icon:hover {
   .profile .btn {
     font-size: 12px;
   }
+
   .fc .fc-button {
     font-size: 10px !important;
   }

@@ -84,33 +84,41 @@
                     <!-- profile -->
                     <div class="col-4 profile">
                         <div class="card text-center">
-                            <div class="mt-2">
+                            <div class="text-center">
                                 <img src="assets/images/profile/profile-pic.png"
-                                    class="profile-pic img-fluid rounded-circle" alt="">
+                                    class="profile-pic img-fluid rounded-circle card-img-top" alt="Not-show">
                             </div>
-                            <div class="card-body">
-                                <h4 class="card-title">webdeveloper</h4>
-                                <button id="upload_btn" class="btn btn-primary"> Upload Image</button>
+                            <div class="card-body p-0">
+                                <div class="text-center">
+                                    <!-- <button id="upload_btn" class="btn btn-primary"> Upload Image</button> -->
+                                </div>
                                 <form action="" class="d-none" id="profilePic_form" method="post">
                                     <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
                                     <button type="submit" class="btn btn-purple"> Submit</button>
                                 </form>
+
+                                <p>Hamza ALi</p>
+                                <p>Hamza66@gmail.com</p>
+                                <p>Busssiness</p>
+                                <p>Medtronix</p>
+
                             </div>
                         </div>
-                        <div class="mt-3 d-flex justify-content-between">
+                        <div class="mt-2 d-flex justify-content-between">
 
                             <!-- Invoice and Billing -->
-                            <a href="#" type="button" class="btn btn-primary common-btn" data-toggle="modal"
+                            <button type="button" class="btn btn-primary common-btn padding-btn" data-toggle="modal"
                                 data-target="#invoice_Billing">
                                 Invoice and Billing
-                            </a>
+                            </button>
                             <!-- Invoice and Billing Modal -->
                             <div class="modal fade" id="invoice_Billing" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title text-purple" id="exampleModalLabel"> Invoice and Billing
+                                            <h5 class="modal-title text-purple" id="exampleModalLabel"> Invoice and
+                                                Billing
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
@@ -118,62 +126,77 @@
                                         </div>
                                         <div class="modal-body">
                                             <form>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="name">Client Name<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control " id="name"
-                                                        placeholder="Enter Client Name">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="name">Client Name<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control " id="name"
+                                                            placeholder="Enter Client Name">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="Client_Email">Client Email<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" id="Client_Email"
+                                                            placeholder="Enter Client Email">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="Client_phone">Client Phone No<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="phone" class="form-control" id="Client_phone"
+                                                            placeholder="Enter Client Phone No">
+                                                    </div>
 
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="Client_Email">Client Email<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control" id="Client_Email"
-                                                        placeholder="Enter Client Email">
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="Client_phone">Client Phone No<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="phone" class="form-control" id="Client_phone"
-                                                        placeholder="Enter Client Phone No">
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="Client_address">Client Address<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control" id="Client_address"
-                                                        placeholder="Enter Client Address">
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="Due_Date">Due Date<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="date" class="form-control" id="Due_Date"
-                                                        placeholder="Due Date">
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="Client_Amount">Total Amount<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="number" class="form-control" id="Client_Amount"
-                                                        placeholder="Enter Total Amount">
-                                                </div>
-                                                <div class="form-group mb-1">
-                                                    <label class="mb-0" for="client_Condition">Terms & Condition<span
-                                                            class="text-danger">*</span></label>
-                                                    <textarea class="form-control" name="" id="client_Condition" cols="30" rows="3" placeholder="Terms & Condition"></textarea>
-                                                </div>
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="Client_address">Client Address<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="Client_address"
+                                                            placeholder="Enter Client Address">
+                                                    </div>
+                                                    <div class="col-6">
 
-                                                <button type="submit"
-                                                    class="btn btn-secondary btn-lg btn-block mt-1">Submit</button>
+                                                        <label class="mb-0" for="bank_name">Bank Name<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="Client_Amount"
+                                                            placeholder="Enter Acount Number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="acount_Number">Acount Number<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="number" class="form-control" id="Client_Amount"
+                                                            placeholder="Enter Acount Number">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="mb-0" for="Due_Date">Due Date<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="date" class="form-control" id="Due_Date"
+                                                            placeholder="Due Date">
+
+                                                    </div>
+                                                    <div class="col-6">
+
+                                                        <label class="mb-0" for="client_amount">Total Amount<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="number" class="form-control" id="client_amount"
+                                                            placeholder="Enter Total Amount">
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+
+                                                        <button type="submit"
+                                                            class="btn btn-secondary btn-lg btn-block">Submit</button>
+                                                    </div>
+                                                </div>
                                             </form>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Register Employee -->
-                            <a href="#" type="button" class="btn btn-primary common-btn" data-toggle="modal"
+                            <button  type="button" class="btn btn-primary common-btn padding-btn" data-toggle="modal"
                                 data-target="#Employee_register">
                                 Register Employee
-                            </a>
+                            </button>
 
                             <!--Register Employee Modal -->
                             <div class="modal fade" id="Employee_register" tabindex="-1"
@@ -458,16 +481,16 @@
 
                         <!-- Workflow-Automation -->
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
-                            data-target="#document_management">
+                            data-target="#Workflow_Automation">
                             Workflow Automation
                         </button>
                         <!-- Workflow-Automation modal -->
-                        <div class="modal fade" id="document_management" tabindex="-1"
+                        <div class="modal fade" id="Workflow_Automation" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-dialog-scrollable expand-modal">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable expand-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-purple" id="exampleModalLabel"> Document Management
+                                        <h5 class="modal-title text-purple" id="exampleModalLabel"> Workflow Automation
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -475,38 +498,11 @@
                                     </div>
                                     <div class="modal-body">
                                         <form action="" method="post">
-                                            <input type="file" name="documenet_upload" id="fileToUpload"
+                                            <h5 class="text-secondary">Profile Image</h5>
+                                            <input type="file" name="documenet_upload" id=""
                                                 accept="image/*">
                                             <button type="submit" class="btn btn-secondary">Upload</button>
                                         </form>
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col" colspan="3">File Name</th>
-                                                    <td scope="col">type</td>
-                                                    <th scope="col">Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td scope="col" colspan="3"> iam web developer</td>
-                                                    <td scope="col">img</td>
-                                                    <td><a href="#"><i class="fa fa-pencil-square-o document-icon"
-                                                                aria-hidden="true"></i></a>
-
-                                                        <a href="#"> <i class="fa fa-trash document-icon"
-                                                                aria-hidden="true"></i></a>
-                                                        <a href="#">
-                                                            <i class="fa fa-download document-icon"
-                                                                aria-hidden="true"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                            </tbody>
-                                        </table>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -624,7 +620,7 @@
                         </div>
                         <div class="modal fade" id="listEvent" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable expand-modal">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable expand-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title text-purple" id="exampleModalLabel">List Events</h5>
@@ -642,10 +638,14 @@
                                                     <th>
                                                         <h5 class="text-purple">Date</h5>
                                                     </th>
+                                                    <th>
+                                                        <h5 class="text-purple">Action</h5>
+                                                    </th>
 
                                                 </tr>
                                             </thead>
                                             <tbody id="list_event_tb">
+                                            
                                             </tbody>
 
                                         </table>
@@ -712,15 +712,15 @@
                     </div>
                     <div class="col-5 mt-20" style="max-height: 288px; overflow: auto;">
 
-                        <a href="#" type="button" class="btn btn-primary common-btn btn-lg btn-block">
-                            Email Correspondence</a>
+                        <button href="#" type="button" class="btn btn-primary common-btn btn-lg btn-block">
+                            Email Correspondence</button>
                         <!-- file-upload -->
                         <div class="mt-2">
                             <h4 class="text-purple">Drag and Drop file upload</h4>
                             <input id="demo" type="file" name="files" accept="" multiple>
                         </div>
-                        <a href="#" type="button" class="btn btn-primary common-btn btn-lg btn-block">
-                            Legal Analytics</a>
+                        <button href="#" type="button" class="btn btn-primary common-btn btn-lg btn-block">
+                            Legal Analytics</button>
 
                     </div>
                 </div>

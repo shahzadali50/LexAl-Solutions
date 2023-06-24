@@ -51,7 +51,7 @@ function saveEvent() {
   let event_name = $('#event_name').val();
   if (event_name != '') {
       let event_date = $('#event_date').val();
-      $('#list_event_tb').append('<tr><td>' + event_name + '</td><td>' + event_date + '</td></tr>');
+      $('#list_event_tb').append('<tr><td><P>' + event_name + '</P></td><td>' + event_date + '</td> <td><i class="fa fa-trash document-icon" aria-hidden="true"></i> </td></tr>');
       $('#addEvent').modal('hide');
   }
 
