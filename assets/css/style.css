@@ -288,6 +288,15 @@ i.document-icon:hover {
 .expand-modal .modal-content {
   height: 700px !important;
 }
+/* collaboration-tools */
+.collaboration-chat img.chat-img{
+  width: 50px;
+  height: 50px;
+}
+.collaboration-chat span.notification{
+ border-radius: 11px;
+ padding: 5px 8px;
+}
 
 @media only screen and (max-width: 1200px) {
   .common-btn {
