@@ -1,12 +1,5 @@
-// profile-pic js👇👇
-$(document).ready(function () {
-  $('#upload_btn').click(function () {
-    $('input[name="fileToUpload"]').click();
-  });
-  $('input[name="fileToUpload"]').change(function () {
-    $('#profilePic_form').submit();
-  }); 
   // case_form modal js
+$(document).ready(function () {
   $('#case_form_btn').click(function () {
     $('#Case_Managementt').modal('hide');
   });
@@ -46,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
   calendar.render();
 });
 
+
 function saveEvent() {
 
   let event_name = $('#event_name').val();
@@ -53,7 +47,7 @@ function saveEvent() {
       let event_date = $('#event_date').val();
       $('#list_event_tb').append('<tr><td><P>' + event_name + '</P></td><td>' + event_date + '</td> <td><i class="fa fa-trash document-icon" aria-hidden="true"></i> </td></tr>');
       $('#addEvent').modal('hide');
-  }
+    }
 
   /* eventsArray.push({
          date:event_date,
@@ -61,6 +55,9 @@ function saveEvent() {
        });
       */
 }
+$(document).ready(function() {
+  $('#list_event_tb td p').addClass('overflow-hidden');
+});
 // chat JS👇👇
 $(document).ready(function () {
   let element = document.getElementById("textField");

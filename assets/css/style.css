@@ -56,18 +56,19 @@ body.bg-img {
 
 
 .text-purple {
-  color: purple;
+  color: rgb(87, 1, 87);
 }
 
 h4.sub-h {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .shadow {
   /* max-width: 1400px; */
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   padding: 15px 30px;
-  background-color: rgba(5, 2, 9, 0.2);
+  /* background-color: rgba(5, 2, 9, 0.2); */
   z-index: 10;
 }
 
@@ -271,12 +272,16 @@ i.document-icon:hover {
 }
 
 /* case Management */
-.case-table td p {
+.case-table td p{
   max-height: 100px;
   overflow: hidden;
 }
+.overflow-hidden {
+  max-height: 100px;
+  overflow: auto;
+}
 
-.case-table td p:hover {
+.case-table td p:hover{
   overflow: auto;
 }
 
