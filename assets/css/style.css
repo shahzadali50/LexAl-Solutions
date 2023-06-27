@@ -182,12 +182,16 @@ button.padding-btn {
   margin-top: -69px;
 }
 
-.chat .card {
-  /* padding: 10px 15px; */
+.chat .card{
   padding: 0px 15px 24px 15px;
   margin-top: 20px;
+ 
+}
+.chat .main-chat  {
+  /* padding: 10px 15px; */
   max-height: 350px;
   overflow: auto;
+ 
 }
 
 .chat .title {
