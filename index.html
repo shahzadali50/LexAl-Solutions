@@ -185,7 +185,7 @@
                             </div>
 
                             <!-- Register Employee -->
-                            <button  type="button" class="btn btn-primary common-btn padding-btn" data-toggle="modal"
+                            <button type="button" class="btn btn-primary common-btn padding-btn" data-toggle="modal"
                                 data-target="#Employee_register">
                                 Register Employee
                             </button>
@@ -491,8 +491,7 @@
                                     <div class="modal-body">
                                         <form action="" method="post">
                                             <h5 class="text-secondary">Profile Image</h5>
-                                            <input type="file" name="documenet_upload" id=""
-                                                accept="image/*">
+                                            <input type="file" name="documenet_upload" id="" accept="image/*">
                                             <button type="submit" class="btn btn-secondary">Upload</button>
                                         </form>
                                     </div>
@@ -507,74 +506,215 @@
                         <button type="button" class="btn btn-primary btn-lg btn-block common-btn" data-toggle="modal"
                             data-target="#collaboration_tools">
                             Collaboration Tools
+                            <span class="badge badge-warning chat-notification">9+</span>
                         </button>
+                        
                         <!-- collaboration_tools modal -->
                         <div class="modal fade collaboration-chat" id="collaboration_tools" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog modal-xl modal-dialog-scrollable expand-modal">
                                 <div class="modal-content ">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-purple" id="exampleModalLabel">Collaboration Tools
+                                        <h5 class="modal-title text-purple" id="exampleModalLabel">Collaboration Chat
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
+                                        <!-- collaboration_tools chat -->
                                         <div class="row">
-                                            <div class="col-4">
-                                               <form action="">
-                                                <input type="search" class="form-control" placeholder="Search or start a new chat">
-                                               </form> 
-                                               <div class="media align-items-center mb-2">
-                                                <img src="assets/images/profile/profile-pic.png" class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
-                                                <div class="media-body">
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <h6 class="m-0 fw-bolder">Hamza Ali</h5>
-                                                        <span class="text-secondary">10:23PM</span>
+                                            <!-- close chat -->
+                                           <div class="col-4">
+                                            <div class="close-chat scrollbar">
+                                                <form action="" class="sticky-top mb-2">
+                                                    <input type="search" class="form-control"
+                                                        placeholder="Search or start a new chat">
+                                                </form>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">9+</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                 <div class="d-flex justify-content-between">
-                                                    <p class="text-secondary mb-0">Will you do the same for me...</p>
-                                                    <span class="badge badge-success notification">9</span>
-                                                 </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media align-items-center mb-3">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body">
+                                                        <div class="d-flex justify-content-between mt-2">
+                                                            <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                                <span class="text-secondary msg-time">10:23PM</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-secondary show-msg mb-0">Will you do the same for
+                                                                me...</p>
+                                                           <div>
+                                                            <span class="badge badge-success notification">5</span>
+                                                           </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                               </div>
-                                               <div class="media align-items-center mb-2">
-                                                <img src="assets/images/profile/profile-pic.png" class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
-                                                <div class="media-body">
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <h6 class="m-0 fw-bolder">Hamza Ali</h5>
-                                                        <span class="text-secondary">10:23PM</span>
+                                           </div>
+                                            <!-- chat-open -->
+                                            <div class="col-8 chat-open px-0">
+                                               <div class="media align-items-center mb-2 open-person">
+                                                    <img src="assets/images/profile/profile-pic.png"
+                                                        class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
+                                                    <div class="media-body mt-2">
+                                                        <h6 class="m-0 fw-bolder">Hamza Ali</h5>
+                                                            <span class="text-secondary online">Last seen today
+                                                                7:34PM</span>
+                                                    </div>
                                                 </div>
-                                                 <div class="d-flex justify-content-between">
-                                                    <p class="text-secondary mb-0">Will you do the same for me...</p>
-                                                    <span class="badge badge-success notification">9</span>
-                                                 </div>
-                                                </div>
-                                              </div>
-                                               <div class="media align-items-center mb-2">
-                                                <img src="assets/images/profile/profile-pic.png" class="img-fluid chat-img mr-2 rounded-circle" alt="Not-show">
-                                                <div class="media-body">
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <h6 class="m-0 fw-bolder">Hamza Ali</h5>
-                                                        <span class="text-secondary">10:23PM</span>
-                                                </div>
-                                                 <div class="d-flex justify-content-between">
-                                                    <p class="text-secondary mb-0">Will you do the same for me...</p>
-                                                    <span class="badge badge-success notification">9</span>
-                                                 </div>
-                                                </div>
-                                              </div>
-                                              
+                                                <div class="chat-panel scrollbar">
+                                                    
+                                                    <div class="row ">
+                                                        <div class="col-lg-12">
+                                                            <div class="chat-bubble chat-bubble-left">
+                                                             <p> i am going to school 
+                                                                <span class="d-flex justify-content-end" style="font-size: 12px;">6:33PM</span>
+                                                             </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <div class="col-lg-12">
+                                                            <div class="chat-bubble chat-bubble-left">
+                                                             <p> i am going to school Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab quam autem at nesciunt impedit pariatur adipisci? Officia esse eum, deserunt ad fugit atque harum quaerat assumenda mollitia iusto at?
+                                                                <span class="d-flex justify-content-end" style="font-size: 12px;">6:33PM</span>
+                                                             </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <div class="col-lg-12 text-right">
+                                                            <div class="chat-bubble chat-bubble-right">
+                                                                <p> i am going to scholl Lorem ipsum dolor numquam. Veritatis, ratione nostrum modi non iure quos repudiandae eaque excepturi ex asperiores, dolores cupiditate.
+                                                                    <span class="d-flex justify-content-end" style="font-size: 12px;">6:33PM</span> </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                      </div>
+                                                <div class="type-msg">
+                                                    <form action="">
+                                                        <textarea class="form-control messenger_input scrollbar" name="" id=""  placeholder="Enter a Meassage"></textarea>
+                                                        <button type="submit" class="btn send-msg-btn"><img src="assets/images/chat/send-msg.svg" alt="not-show"></button>
+                                                        <button type="button" class="btn send-file-btn"><img src="assets/images/chat/send-file.svg" alt="not-show"></button>
+                                                        <input type="file" name="send-file-input" class="d-none" accept="*">
+                                                    </form>
+                                                     </div>
+
+                                               
                                             </div>
+                                          
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+
+
                     <!-- calender -->
                     <div class="col-4">
                         <div class="card">
@@ -649,7 +789,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="list_event_tb">
-                                            
+
                                             </tbody>
 
                                         </table>
@@ -666,9 +806,9 @@
                 <div class="row">
                     <!-- chat -->
                     <div class="col-7  ">
-
+                        
                         <div class="chat">
-                            <div class="card">
+                            <div class="card scrollbar">
                                 <div class="bg-white py-2 sticky-top"></div>
                                 <div class="title">
 

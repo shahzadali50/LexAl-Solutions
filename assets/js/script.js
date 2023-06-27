@@ -4,9 +4,6 @@ $(document).ready(function () {
     $('#Case_Managementt').modal('hide');
   });
 });
-
-
-
 // Calender JS 👇👇
 var eventsArray = [
   {
@@ -106,3 +103,9 @@ $(document).ready(function () {
 
     $('#edit_input_' + id).css('border', "1px purple solid");
 }
+
+$(document).ready(function () {
+  $('.send-file-btn').click(function () {
+    $('input[name="send-file-input"]').click();
+  });
+});
