@@ -148,13 +148,29 @@ button.padding-btn {
 }
 
 /* Notification */
-.notification .notification-menu {
-  padding: 20px 20px;
+.notification .menu {
+  left: -238px;
   width: 500px;
-  top: 20px !important;
-  left: -248px !important;
-  max-height: 593px;
+  min-height: 590px;
+  border-radius: 10px;
+}
+
+.notification .content {
+  max-height: 500px;
   overflow: auto;
+}
+.notification .media:hover {
+  background-color: rgba(213, 209, 209, 0.384);
+}
+
+.notification h4 {
+  border-bottom: 1px solid gray;
+  padding: 0px 0px 7px 7px;
+}
+
+.notification .notification-img {
+  width: 50px;
+  height: 50px;
 }
 
 /* logout */
@@ -182,14 +198,14 @@ button.padding-btn {
   margin-top: -69px;
 }
 
-.chat-bot .card{
- min-height: 366px;
- padding: 0px 5px;
- 
+.chat-bot .card {
+  min-height: 366px;
 }
-.chat-bot .content{
+
+.chat-bot .content {
   max-height: 280px;
   overflow: auto;
+  margin-top: 5px;
 
 }
 
@@ -208,37 +224,33 @@ button.padding-btn {
   font-size: 22px;
   padding-right: 8px;
 }
-.chat-bot .type-msg{
+
+.chat-bot .write-question {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   padding-bottom: 10px;
 }
-.chat-bot .send-msg-btn{
+
+.chat-bot .send-msg {
   position: absolute;
   top: 18px;
   right: 13px;
 }
-.chat-bot .send-msg-btn img{
+
+.chat-bot .send-msg img {
   width: 25px;
 }
 
 .chat-bot form textarea,
 .messenger_input {
   resize: none;
-  background-color: #6f88a321 !important;
+  height: 60px;
   padding-top: 15px;
-  max-height: 60px;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
-.chat-bot button.send-msg,
-.messenger_chat-btn {
-  background: none;
-  color: rgb(40, 82, 75);
-  border: none;
-  position: absolute;
-  top: -49px;
-  right: 24px;
+.chat-bot form textarea:focus {
+  border: 1px solid rgb(13, 0, 128);
 }
 
 .lexAI .mt-20 {
@@ -352,6 +364,10 @@ span.chat-notification {
   height: 50px;
 }
 
+.close-chat .media:hover {
+  background-color: rgba(213, 209, 209, 0.384);
+}
+
 .close-chat span.notification {
   border-radius: 14px;
   padding: 7px 9px;
@@ -377,6 +393,10 @@ span.chat-notification {
   position: relative;
   animation: fadeIn 1s ease-in;
   display: inline-block;
+}
+
+.chat-open .height-400 {
+  min-height: 400px;
 }
 
 .chat-open p {
