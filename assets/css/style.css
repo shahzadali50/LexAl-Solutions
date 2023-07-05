@@ -177,41 +177,44 @@ button.padding-btn {
   margin-left: 3px !important;
 }
 
-/* chat */
-.chat {
+/* chat-bot */
+.chat-bot {
   margin-top: -69px;
 }
 
-.chat .card{
-  padding: 0px 15px 24px 15px;
-  margin-top: 20px;
+.chat-bot .card{
+ min-height: 366px;
+ padding: 0px 5px;
  
 }
-.chat .main-chat  {
-  /* padding: 10px 15px; */
-  max-height: 350px;
+.chat-bot .content{
+  max-height: 300px;
   overflow: auto;
- 
+
 }
 
-.chat .title {
+.chat-bot .title {
   background-color: #898c9021;
-  padding: 15px 0px;
   margin: 10px 0px;
-  border-radius: 8px;
+  padding: 10px 7px;
 }
 
-.chat img.q-img {
-  width: 35px;
+.chat-bot img.q-img {
+  width: 32px;
 }
 
-.chat i.title-icon {
+.chat-bot i.title-icon {
   color: rgb(128, 133, 133);
   font-size: 22px;
-  padding: 0px 10px;
+  padding-right: 8px;
+}
+.chat-bot .type-msg{
+  position: absolute;
+  bottom:0px;
+  padding-bottom: 10px;
 }
 
-.chat form textarea,
+.chat-bot form textarea,
 .messenger_input {
   resize: none;
   background-color: #6f88a321 !important;
@@ -220,7 +223,7 @@ button.padding-btn {
   padding-right: 50px;
 }
 
-.chat button.send-msg,
+.chat-bot button.send-msg,
 .messenger_chat-btn {
   background: none;
   color: rgb(40, 82, 75);
@@ -305,6 +308,7 @@ i.document-icon:hover {
   overflow: auto;
   padding: 0px 18px;
 }
+
 
 .scrollbar::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
