@@ -188,7 +188,7 @@ button.padding-btn {
  
 }
 .chat-bot .content{
-  max-height: 300px;
+  max-height: 280px;
   overflow: auto;
 
 }
@@ -212,6 +212,14 @@ button.padding-btn {
   position: absolute;
   bottom:0px;
   padding-bottom: 10px;
+}
+.chat-bot .send-msg-btn{
+  position: absolute;
+  top: 18px;
+  right: 13px;
+}
+.chat-bot .send-msg-btn img{
+  width: 25px;
 }
 
 .chat-bot form textarea,
